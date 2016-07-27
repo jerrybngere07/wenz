@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>School vr</title>
+    <meta name="tku school  " content="Who want to see the school">
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="build.js"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+        <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
+             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>             
+           
+        </a-entity>
+         <!----xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------------------------------>
+                    <a-assets>
+        <a-mixin id="frame-edge" geometry="primitive: box; depth: 10; height: 0.1; width: 0.1"
+                 material="color: #404040"></a-mixin>
+    </a-assets>
+
+            <a-entity id="logo" position="0 0.65 -10" scale="5 5 5">
+        <a-entity id="box">
+            <a-animation attribute="scale" from="0 0 0" to="1 1 1" begin="500" dur="500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="position" from="0 0 0" to="0 0.5 0" begin="500" dur="500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="rotation" from="0 -300 0" to="30 54 36" begin="500" dur="1200"
+                         fill="both" easing="ease-out"></a-animation>
+
+
+
+            <a-entity  scale="0.08 0.08 0.08">
+                
+                <a-image id="exit" src="pv.png" width="20" height="10" opacity="1" position="-0.5 0 0" rotation="0 -45 0" >
+                    <a-event name="mouseenter" target="#exit"  ></a-event>
+                    <a-event name="mouseleave" target="#exit"  ></a-event>
+                    
+                </a-image>
+            </a-entity>
+        </a-entity>
+
+
+
+
+        <a-entity id="dots1" rotation="0 90 0">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-cylinder position="0.5 2.5 0.5" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+
+        </a-entity>
+
+        <a-entity id="dots1" rotation="0 0 0">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+
+            <a-cylinder position="-0.5 -1 -0.5" radius="0.04" height="3" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+        </a-entity>
+
+        <a-entity id="dots1" rotation="0 0 -90">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-cylinder position="-0.5 3 -1" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+            <a-cylinder position="-1 -2.5 -0.5" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+        </a-entity>
+
+
+
+        <a-image id="con" src="logo.png" width="3" height="1.5" onmouseover="function() {
+
+        }" >
+            <a-animation attribute="scale" from="1 0 1" to="0.75 0.75 0.75" begin="1500"
+                         dur="200" fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="position" from="0 -3 0" to="0 -0.7 0" begin="1000"
+                         dur="1000" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+
+
+
+
+        <a-entity>
+            <a-curvedimage id="p1" radius="5" theta-length="50" height="2.5" src="外語大樓.jpg" position="0 2.75 3" rotation="0 55 0"  visible="true" scae=".9 .9 .9">
+                            </a-curvedimage>
+
+
+        </a-entity>
+
+        <a-curvedimage id="p2" radius="5" theta-length="50" height="2.5" src="工學大樓.jpg" position="0 0 3" rotation="0 55 0" opacity="1" visible="true">
+                    </a-curvedimage>
+
+
+        <a-curvedimage id="p3" radius="5" theta-length="50" height="2.5" src="教育館.jpg" position="0 -2.75 3" rotation="0 55 0" opacity="1" visible="true">
+                    </a-curvedimage>
+        
+       
+                <a-entity>
+                    <a-curvedimage id="p4" radius="5" theta-length="50" height="2.5" src="文館斜坡.jpg" position="0 2.75 3" rotation="0 0 0"  visible="true" scae=".9 .9 .9">
+                    </a-curvedimage>
+
+
+                </a-entity>
+                <a-curvedimage id="p5" radius="5" theta-length="50" height="2.5" src="商管福園.jpg" position="0 0 3" rotation="0 0 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+                
+
+
+                <a-curvedimage id="p6" radius="5" theta-length="50" height="2.5" src="黑天鵝.jpg" position="0 -2.75 3" rotation="0 0 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+                
+
+        <!--　----------------------------------------------------------- -->
+
+                <a-entity>
+                    <a-curvedimage id="p7" radius="5" theta-length="50" height="2.5" src="蛋捲廣場.jpg" position="0 2.75 3" rotation="0 -55 0"  visible="true" scae=".9 .9 .9">
+                                            </a-curvedimage>
+                </a-entity>
+                <a-curvedimage id="p8" radius="5" theta-length="50" height="2.5" src="化學館.jpg" position="0 0 3" rotation="0 -55 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+                
+
+
+                <a-curvedimage id="p9" radius="5" theta-length="50" height="2.5" src="宮燈教室.jpg" position="0 -2.75 3" rotation="0 -55 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+                
+
+
+
+                <a-entity>
+                    <a-curvedimage id="p10" radius="5" theta-length="50" height="2.5" src="操場.jpg" position="0 2.75 3" rotation="0 -110 0"  visible="true" scae=".9 .9 .9">
+                    
+                    
+                    
+                    </a-curvedimage>
+
+                </a-entity>
+
+
+                <a-curvedimage id="p11" radius="5" theta-length="50" height="2.5" src="科學館.jpg" position="0 0 3" rotation="0 -110 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+
+
+
+
+                <a-curvedimage id="p12" radius="5" theta-length="50" height="2.5" src="游泳館.jpg" position="0 -2.75 3" rotation="0 -110 0" opacity="1" visible="true">
+                                    </a-curvedimage>
+                
+
+
+
+
+
+            </a-entity>
+
+            <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+            <a-light type="ambient" color="#fff"></a-light>
+
+
+
+         
+           <!-------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-------------------------------------------------->      
+         <a-sky id="sky"  rotation="0 -60 0" radius="5000" color="#fff" ></a-sky>
+        
+
+        <a-image id="downtown" src="bs.png" radius="5.7" theta-length="35" height=".85" position="100 -10 200" scale="50 50 50" opacity=".8">
+          <a-animation attribute="rotation" from="0 1.5 0" to="0 -358.5 0" begin="0" dur="10000" repeat="infinite" easing="linear"></a-animation> 
+           </a-image>
+
+
+
+        <a-image id="business" height="40" width="100" src="business-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="ed" height="40" width="100" src="ed-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+       
+        <a-image id="technology" height="40" width="100" src="technology-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="artcollege" height="200" width="600" src="artcollege-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="fasle">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        
+        <a-image id="park" height="200" width="600" src="park-button.png" position="-200 90 1600" rotation="0 180 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="red27" height="20" width="60" src="red27-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="library" height="40" width="80" src="library-button.png" position="-150 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="english" height="40" width="80" src="english-button.png" position="-50 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="ground" height="40" width="80" src="ground-button.png" position="-10 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+
+        <a-image id="science" height="40" width="80" src="science-button.png" position="40 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="sg" height="40" width="80" src="5tiger-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="4"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+    
+    <a-image id="v" height="40" width="80" src="v-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="4"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="ad" height="40" width="80" src="ad-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="4"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="light" height="40" width="80" src="light-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="4"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="swimming" height="40" width="80" src="swimming-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="4"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="back" height="40" width="100" src="back-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
+        <a-mouseenter opacity="4"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+
+
+        <a-mixin
+
+                id="hover"
+                geometry="primitive: plane; width: 100; height: 100;"
+                material="color: #FFFFFF; opacity:0">
+        </a-mixin>
+  
+
+        <a-entity
+                id="hover-bs"
+                target="#label-bs"
+                mixin="hover"
+                position="50  170 -280"
+                rotation="0 40 1"
+                scale="0 0 0"
+                visible="true">
+        </a-entity>
+        <a-image
+                id="label-bs"
+                scale="0 0 0"
+                src="business-show.png"
+                position="-50  20 -20"
+                rotation="0 50  0"
+                visible="true">
+        </a-image>
+       
+
+<a-entity id="hover-lb" target="#label-lb" mixin="hover" position="-5  6 -8" rotation="0 40 -3" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-lb" src="library-show.png" position="-20 10 3.5" scale="0 0 0" rotation="0 40  0" visible="true">
+        </a-image>
+
+
+<a-entity id="hover-star" target="#label-star" mixin="hover" position="5  5 -7" rotation="0 -30 0" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-star" src="prak-show.png" position="1  1.5 -6" scale="0 0 0" rotation="10 -10  0" visible="true">
+        </a-image>
+
+          <a-entity id="hover-5t" target="#label-5t" mixin="hover" position="-15 8 -6.5" rotation="0 50 -3" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-5t" src="sg-show.png" position="-10 15 -8" scale="0 0 0" rotation="0 80 0" visible="true">
+        </a-image>
+    </a-scene>
+  </body>
+
+
+  <script type="text/javascript">
+      var hovers = [];
+      var labels = [];
+      hovers.push(document.querySelector('#hover-bs'));
+      labels.push(document.querySelector('#label-bs'));
+
+
+       hovers.push(document.querySelector('#hover-lb'));
+      labels.push(document.querySelector('#label-lb'));
+
+        hovers.push(document.querySelector('#hover-star'));
+      labels.push(document.querySelector('#label-star'));
+
+      hovers.push(document.querySelector('#hover-5t'));
+      labels.push(document.querySelector('#label-5t'));
+      function setState(subject, state, keep) {
+          var iterator;
+
+          // determine what we're iterating over
+          if (subject === 'hovers') {
+              iterator = hovers;
+          }
+          if (subject === 'labels') {
+              iterator = labels;
+          }
+          if (subject === 'hotspots') {
+              iterator = hoversEgg;
+          }
+          if (subject === 'eggs') {
+              iterator = labelsEgg;
+          }
+          // console.log('iterator', iterator);
+
+          // determine which state
+          if (state == 'visible') {
+              // set all hovers visible
+              iterator.forEach(function(iterate) {
+                  iterate.setAttribute('visible', true);
+              })
+          }
+          if (state == 'invisible') {
+              // set all hovers invisible
+              iterator.forEach(function(iterate) {
+                  iterate.setAttribute('visible', false);
+              })
+          }
+
+          // see if we have one to keep visible
+          if (keep) {
+              keep.setAttribute('visible', true);
+          }
+      }
+      hovers.forEach(function(hover) {
+          hover.addEventListener('mouseenter', function() {
+              // set state of all hovers to invisible except one
+              setState('hovers', 'invisible', hover);
+
+              // show corresponding label
+              var hoverLabel = hover.getAttribute('target');
+              // console.log('hoverlabel', hoverLabel);
+              document.querySelector(hoverLabel).setAttribute('visible', true);
+          })
+
+          hover.addEventListener('mouseleave', function() {
+              // set state of all hovers to visible
+              setState('hovers', 'visible');
+
+              // set state of all labels to invisible
+              setState('labels', 'invisible');
+          })
+
+          hover.addEventListener('click', function() {
+              var egg = hover.getAttribute('egg-target');
+              var is_visible = document.querySelector(egg).getAttribute('visible');
+              if (egg !== null && is_visible === false) {
+                  document.querySelector(egg).setAttribute('visible', true);
+              } else {
+                  document.querySelector(egg).setAttribute('visible', false);
+              }
+          })
+
+      });
+      labelsEgg.forEach(function(egg) {
+          egg.addEventListener('click', function() {
+              this.setAttribute('visible', false);
+          })
+      });
+        
+  </script>
+  <script>
+       var exit = document.querySelector('#exit');
+       var con = document.querySelector('#con');
+        var p1=document.querySelector('#p1');
+         var p2=document.querySelector('#p2');
+          var p3=document.querySelector('#p3');
+           var p4=document.querySelector('#p4');
+            var p5=document.querySelector('#p5');
+             var p6=document.querySelector('#p6');  
+              var p7=document.querySelector('#p7');
+               var p8=document.querySelector('#p8');
+                var p9=document.querySelector('#p9');   
+                 var p10=document.querySelector('#p10');
+                  var p11=document.querySelector('#p11');
+                   var p12=document.querySelector('#p12');
+
+
+
+
+      var sky = document.querySelector('#sky');
+      
+      var business= document.querySelector('#business');
+      var technology = document.querySelector('#technology');
+      var artcollege = document.querySelector('#artcollege');
+      var park = document.querySelector('#park');
+      var red27 = document.querySelector('#red27');
+      var ad = document.querySelector('#ad');
+      var light = document.querySelector('#light');
+      var library = document.querySelector('#library');
+      var english = document.querySelector('#english');
+      var ground = document.querySelector('#ground');
+      var science = document.querySelector('#science');
+      var sg = document.querySelector('#sg');
+      var swimming = document.querySelector('#swimming');
+      var v = document.querySelector('#v');
+      var ed = document.querySelector('#ed');
+      var back = document.querySelector('#back');
+      
+
+      var hover1 = document.querySelector('#hover-bs');
+      var label1= document.querySelector('#label-bs');
+                                               
+        var hover2 = document.querySelector('#hover-lb');
+      var label2= document.querySelector('#label-lb');
+                                 
+         var hover3 = document.querySelector('#hover-star');
+      var label3= document.querySelector('#label-star');   
+
+       var hover4= document.querySelector('#hover-5t');
+      var label4= document.querySelector('#label-5t');           
+
+                                                       document.querySelector('#exit').addEventListener('click', function() {
+                                                             sky.setAttribute('src', 'business.jpg');
+                                                             this.setAttribute('visible', 'false');
+                                                                                                     con.setAttribute('visible', 'false');
+                                                                                                      p1.setAttribute('visible', 'false');
+                                                                                                      p2.setAttribute('visible', 'false');
+                                                                                                      p3.setAttribute('visible', 'false');
+                                                                                                      p4.setAttribute('visible', 'false');
+                                                                                                      p5.setAttribute('visible', 'false');
+                                                                                                      p6.setAttribute('visible', 'false');
+                                                                                                      p7.setAttribute('visible', 'false');
+                                                                                                      p8.setAttribute('visible', 'false');
+                                                                                                      p9.setAttribute('visible', 'false');
+                                                                                                      p10.setAttribute('visible', 'false');
+                                                                                                      p11.setAttribute('visible', 'false');
+                                                                                                      p12.setAttribute('visible', 'false');      
+
+
+                                
+
+
+
+                                                                                                      ad.setAttribute('visible', 'false');
+                                                                                                      light.setAttribute('visible', 'false');
+                                                                                                      artcollege.setAttribute('visible', 'false');
+                                                                                                      red27.setAttribute('visible', 'false');
+                                                                                                      v.setAttribute('visible', 'false');
+                                                                                                      ground.setAttribute('visible', 'false');
+                                                                                                      swimming.setAttribute('visible', 'false');
+                                                                                                      sg.setAttribute('visible', 'false');
+                                                                                                      ed.setAttribute('visible', 'false');
+                                                                                                      artcollege.setAttribute('visible', 'false');
+                                                                                                      library.setAttribute('visible', 'false');
+                                                                                                      
+                                                                                                      artcollege.setAttribute('visible', 'true');
+                                                                                                      artcollege.setAttribute('position', '-4100 280 700');
+                                                                                                      artcollege.setAttribute('rotation', '0 100 0');
+                                                                                                      artcollege.setAttribute('scale', '2.7 2.7 2.7');
+
+                                                                                                      back.setAttribute('visible', 'true');
+                                                                                                      back.setAttribute('position', '500 90 -700');
+                                                                                                      back.setAttribute('rotation', '0 -30 0');
+                                                                                                      back.setAttribute('scale', '2.8 2.8 2.8');
+
+
+                                                                                                      park.setAttribute('visible', 'true');
+                                                                                                      park.setAttribute('position', '-200 90 1600');
+                                                                                                      park.setAttribute('rotation', '0 180 0');
+                                                                                                      park.setAttribute('scale', '0.7 0.7 0.7');
+                                                                   hover1.setAttribute('scale', '5 4 0');
+                                                                  label1.setAttribute('scale', '15 5 2');                                                  
+                                                                  hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');
+                                                             });
+
+
+
+                                               document.querySelector('#back').addEventListener('click', function() {
+                                                           sky.setAttribute('src', 'back.jpg');
+                                                           this.setAttribute('visible', 'false');
+                                                   
+                                                         hover1.setAttribute('visible', 'false');
+                                                         label1.setAttribute('opacity', 'false');
+                                                                                                ad.setAttribute('visible', 'false');
+                                                                                                light.setAttribute('visible', 'false');
+                                                                                                artcollege.setAttribute('visible', 'false');
+                                                                                                red27.setAttribute('visible', 'false');
+                                                                                                v.setAttribute('visible', 'false');
+                                                                                                ground.setAttribute('visible', 'false');
+                                                                                                swimming.setAttribute('visible', 'false');
+                                                                                                sg.setAttribute('visible', 'false');
+                                                                                                ed.setAttribute('visible', 'false');
+                                                                                                artcollege.setAttribute('visible', 'false');
+                                                                                                park.setAttribute('visible', 'false');
+                                                                                                english.setAttribute('visible', 'false');
+                                                                                                
+                                                                                                technology.setAttribute('visible', 'true');
+                                                                                                technology.setAttribute('position', '-50 280 1500');
+                                                                                                technology.setAttribute('rotation', '0 180 0');
+                                                                                                technology.setAttribute('scale', '4 4 4');
+
+                                                                                                business.setAttribute('visible', 'true');
+                                                                                                business.setAttribute('position', '-100 20 -1500');
+                                                                                                business.setAttribute('rotation', '0 0 0');
+                                                                                                business.setAttribute('scale', '4 4 4');
+                                                           });
+      
+                                                 document.querySelector('#business').addEventListener('click', function() {
+                                                             sky.setAttribute('src', 'business.jpg');
+                                                             this.setAttribute('visible', 'false');
+                                                                                                      ad.setAttribute('visible', 'false');
+                                                                                                      light.setAttribute('visible', 'false');
+                                                                                                      artcollege.setAttribute('visible', 'false');
+                                                                                                      red27.setAttribute('visible', 'false');
+                                                                                                      v.setAttribute('visible', 'false');
+                                                                                                      ground.setAttribute('visible', 'false');
+                                                                                                      swimming.setAttribute('visible', 'false');
+                                                                                                      sg.setAttribute('visible', 'false');
+                                                                                                      ed.setAttribute('visible', 'false');
+                                                                                                      artcollege.setAttribute('visible', 'false');
+                                                                                                      library.setAttribute('visible', 'false');
+                                                                                                      
+                                                                                                      artcollege.setAttribute('visible', 'true');
+                                                                                                      artcollege.setAttribute('position', '-4100 280 700');
+                                                                                                      artcollege.setAttribute('rotation', '0 100 0');
+                                                                                                      artcollege.setAttribute('scale', '2.7 2.7 2.7');
+
+                                                                                                      technology.setAttribute('visible', 'true');
+                                                                                                      technology.setAttribute('position', '-8000 -20 -500');
+                                                                                                      technology.setAttribute('rotation', '0 90 0');
+                                                                                                      technology.setAttribute('scale', '0.7 0.7 0.7');
+
+
+                                                                                                      park.setAttribute('visible', 'true');
+                                                                                                      park.setAttribute('position', '-200 90 1600');
+                                                                                                      park.setAttribute('rotation', '0 180 0');
+                                                                                                      park.setAttribute('scale', '0.7 0.7 0.7');
+
+                                                                  hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');
+                                                             });
+
+      
+      
+                                                   document.querySelector('#technology').addEventListener('click', function() {
+                                                           sky.setAttribute('src', 'technology.jpg');
+                                                           this.setAttribute('visible', 'false');
+                                                                                                          ad.setAttribute('visible', 'false');
+                                                                                                          light.setAttribute('visible', 'false');
+                                                                                                          artcollege.setAttribute('visible', 'false');
+                                                                                                          red27.setAttribute('visible', 'false');
+                                                                                                          v.setAttribute('visible', 'false');
+                                                                                                          ground.setAttribute('visible', 'false');
+                                                                                                          swimming.setAttribute('visible', 'false');
+                                                                                                          sg.setAttribute('visible', 'false');
+                                                                                                          ed.setAttribute('visible', 'false');
+                                                                                                          artcollege.setAttribute('visible', 'false');
+                                                                                                          park.setAttribute('visible', 'false');
+                                                                                                          business.setAttribute('visible', 'false');
+                                                                                                          library.setAttribute('visible', 'false');
+                                                                                                          english.setAttribute('visible', 'false');
+                                                                                                          
+                                                                                                          ed.setAttribute('visible', 'true');
+                                                                                                          ed.setAttribute('position', '3900 200 -1500');
+                                                                                                          ed.setAttribute('rotation', '0 -80 0');
+                                                                                                          ed.setAttribute('scale', '10.5 10.5 10.5');
+
+                                                                                                          back.setAttribute('visible', 'true');
+                                                                                                          back.setAttribute('position', '-3200 20 3000');
+                                                                                                          back.setAttribute('rotation', '0 100 0');
+                                                                                                          back.setAttribute('scale', '12.3 12.3 12.3');
+                                                                 hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');                  
+
+                                                           });
+                                                           
+                                                     
+                                                           
+                                                    document.querySelector('#artcollege').addEventListener('click', function() {
+                                                  
+                                                    sky.setAttribute('src', 'artcollege.jpg');
+                                                    this.setAttribute('visible', 'false');
+
+                                                        hover1.setAttribute('visible', 'false');
+                                                        label1.setAttribute('visible', 'false');
+                                                           artcollege.setAttribute('visible', 'false');
+                                                           technology.setAttribute('visible', 'false');
+                                                        back.setAttribute('visible', 'false');
+                                                                                                           
+                                                           park.setAttribute('visible', 'true');
+                                                           park.setAttribute('position', '-4100 280 700');
+                                                           park.setAttribute('rotation', '0 100 0');
+                                                           park.setAttribute('scale', '2 2 2');
+                                                                                                           
+                                                           red27.setAttribute('visible', 'true');
+                                                           red27.setAttribute('position', '1000 -20 -100');
+                                                           red27.setAttribute('rotation', '0 -100 0');
+                                                           red27.setAttribute('scale', '4.5 4.5 4.5');
+                                                           
+                                                            hover4.setAttribute('scale', '0 0 0');
+                                                         label4.setAttribute('scale', '0 0 0');                                                 
+                                                                                                           
+                                                    });
+                                                    
+                                                    document.querySelector('#red27').addEventListener('click', function() {
+                                                            
+                                     
+                                                                                                      
+                                                           sky.setAttribute('src', 'red.jpg');
+                                                           this.setAttribute('visible', 'false');
+                                                           business.setAttribute('visible', 'false');
+                                                           red27.setAttribute('visible', 'false');
+                                                           artcollege.setAttribute('visible', 'false');
+                                                           park.setAttribute('visible', 'false');
+                                                                                                      
+                                                                                                      
+                                                           artcollege.setAttribute('visible', 'true');
+                                                           artcollege.setAttribute('position', '370 70 500');
+                                                           artcollege.setAttribute('rotation', '0 220 0');
+                                                           artcollege.setAttribute('scale', '0.3 0.3 0.3');
+                                                                                                           
+                                                           sg.setAttribute('visible', 'true');
+                                                           sg.setAttribute('position', '-200 60 100');
+                                                           sg.setAttribute('rotation', '0 120 0');
+                                                           sg.setAttribute('scale', '0.7 0.7 0.7');
+                                                           sg.setAttribute('opacity','2');
+
+                                                            hover4.setAttribute('scale', '0.2 0.2 0.2');
+                                                          label4.setAttribute('scale', '20 10 0');                                             
+
+                                                         hover1.setAttribute('scale', '0 0 0');
+                                                         label1.setAttribute('scale', '0 0 0');          
+                                                       hover3.setAttribute('scale', '0 0 0');
+                                                         label3.setAttribute('scale', '0 0 0');  
+                                                    });
+                                                    
+                                                    
+                                                        
+                                                     document.querySelector('#sg').addEventListener('click', function() {
+                                                        sky.setAttribute('src', 'sg.jpg');
+                                                        this.setAttribute('visible', 'false');
+                                                                                                    
+                                                        artcollege.setAttribute('visible', 'false');
+                                                        red27.setAttribute('visible', 'false');
+                                                        park.setAttribute('visible', 'false');
+                                                        ad.setAttribute('visible', 'false');
+                                                        light.setAttribute('visible', 'false');
+                                                                                                    
+                                                        red27.setAttribute('visible', 'true');
+                                                        red27.setAttribute('position', '100 -20 -200');
+                                                        red27.setAttribute('rotation', '0 -40 0');
+                                                        red27.setAttribute('scale', '2 2 2');
+                                                                                                    
+                                                        v.setAttribute('visible', 'true');
+                                                        v.setAttribute('position', '-20 20 200');
+                                                        v.setAttribute('rotation', '0 180 0');
+                                                        v.setAttribute('opacity','2');
+                                                        v.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                                    
+                                                        science.setAttribute('visible', 'true');
+                                                        science.setAttribute('position', '-200 0 50');
+                                                        science.setAttribute('rotation', '0 90 0');
+                                                        science.setAttribute('opacity','2');
+                                                        science.setAttribute('scale', '0.7 0.7 0.7');
+
+                                                         hover4.setAttribute('scale', '0 0 0');
+                                                         label4.setAttribute('scale', '0 0 0');    
+                                                         
+                                                     });
+                                                        
+                                                        document.querySelector('#v').addEventListener('click', function() {
+                                                        sky.setAttribute('src', 'v.jpg');
+                                                        this.setAttribute('visible', 'false');
+                                                                                                      
+                                                        artcollege.setAttribute('visible', 'false');
+                                                        red27.setAttribute('visible', 'false');
+                                                        technology.setAttribute('visible', 'false');
+                                                        business.setAttribute('visible', 'false');
+                                                        ground.setAttribute('visible', 'false');
+                                                        swimming.setAttribute('visible', 'false');
+                                                        science.setAttribute('visible', 'false');
+                                                        english.setAttribute('visible', 'false');
+                                                        library.setAttribute('visible', 'false');
+
+                                                         park.setAttribute('visible', 'true');
+                                                         park.setAttribute('position', '-50 -100 1300');
+                                                         park.setAttribute('rotation', '0 180 0');
+                                                         park.setAttribute('opacity','2');
+                                                         park.setAttribute('scale','1.2 1.2 1.2');
+                                                      
+                                                                                                    
+                                                        sg.setAttribute('visible', 'true');
+                                                        sg.setAttribute('position', '900 -20 100');
+                                                        sg.setAttribute('rotation', '0 -90 0');
+                                                        sg.setAttribute('opacity','2');
+                                                        sg.setAttribute('scale','2.1 2.1 2.1');
+                                                                                                      
+                                                        ad.setAttribute('visible', 'true');
+                                                        ad.setAttribute('position', '-50 -20 -400');
+                                                        ad.setAttribute('rotation', '0 0 0');
+                                                        ad.setAttribute('opacity','2');
+                                                        ad.setAttribute('scale','1.2 1.2 1.2');
+
+                                                        light.setAttribute('visible', 'true');
+                                                        light.setAttribute('position', '-900 100 -200');
+                                                        light.setAttribute('rotation', '0 -270 0');
+                                                        light.setAttribute('opacity','2');
+                                                        light.setAttribute('scale','2.65 2.65 2.65');
+                                                        
+                                                                                                      
+                                                        });
+                                                        
+                                                        document.querySelector('#library').addEventListener('click', function() {
+                                                                                                           
+                                                                        sky.setAttribute('src', 'library.jpg');
+                                                                            this.setAttribute('visible', 'false');
+                                                                                                            
+                                                                        ad.setAttribute('visible', 'false');
+                                                                        artcollege.setAttribute('visible', 'false');
+                                                                        red27.setAttribute('visible', 'false');
+                                                                        technology.setAttribute('visible', 'false');
+                                                                        business.setAttribute('visible', 'false');
+                                                                        ground.setAttribute('visible', 'false');
+                                                                        swimming.setAttribute('visible', 'false');
+                                                                        sg.setAttribute('visible', 'false');
+                                                                        ed.setAttribute('visible', 'false');
+                                                                        v.setAttribute('visible', 'false');
+                                                                        park.setAttribute('visible','false');
+                                                                                                            
+                                                                       light.setAttribute('visible', 'true');
+                                                                       light.setAttribute('position', '200 0 -200');
+                                                                       light.setAttribute('rotation', '0 -80 0');
+                                                                       light.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                                            
+                                                                       english.setAttribute('visible', 'true');
+                                                                       english.setAttribute('position', '-300 20 200');
+                                                                       english.setAttribute('rotation', '0 110 0');
+                                                                       english.setAttribute('scale', '1 1 1');
+
+                                                       hover2.setAttribute('scale', '0.16 0.1 0');
+                                                         label2.setAttribute('scale', '20 10 0');
+
+                                                                    hover1.setAttribute('scale', '0 0 0');
+                                                                  label1.setAttribute('scale', '0 0 0');
+
+                                                                  hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');
+                                                                    });
+                                                                    
+                                                        document.querySelector('#english').addEventListener('click', function() {
+                                                        sky.setAttribute('src', 'english.jpg');
+                                                        this.setAttribute('visible', 'false');
+                                                                                                            
+                                                         ad.setAttribute('visible', 'false');
+                                                         artcollege.setAttribute('visible', 'false');
+                                                         red27.setAttribute('visible', 'false');
+                                                         technology.setAttribute('visible', 'false');
+                                                         business.setAttribute('visible', 'false');
+                                                         ground.setAttribute('visible', 'false');
+                                                         swimming.setAttribute('visible', 'false');
+                                                         sg.setAttribute('visible', 'false');
+                                                         light.setAttribute('visible', 'false');
+                                                         v.setAttribute('visible', 'false');
+                                                                                                            
+                                                          ed.setAttribute('visible', 'true');
+                                                          ed.setAttribute('position', '-400 20 -200');
+                                                          ed.setAttribute('rotation', '0 70 0');
+                                                          ed.setAttribute('scale', '1.5 1.5 1.5');
+                                                                                                            
+                                                           library.setAttribute('visible', 'true');
+                                                           library.setAttribute('position', '400 25 290');
+                                                           library.setAttribute('rotation', '0 230 0');
+                                                           library.setAttribute('scale', '1.3 1.3 1.3');
+
+                                                            hover2.setAttribute('scale', '0 0 0');
+                                                         label2.setAttribute('scale', '0 0 0');
+                                                                });
+                                                                
+                                                    document.querySelector('#ground').addEventListener('click', function() {
+                                                    sky.setAttribute('src', 'ground.jpg');
+                                                    this.setAttribute('visible', 'false');
+                                                    
+                                                    v.setAttribute('visible', 'false');
+                                                                                                       ad.setAttribute('visible', 'false');
+                                                                                                       light.setAttribute('visible', 'false');
+                                                                                                       artcollege.setAttribute('visible', 'false');
+                                                                                                       red27.setAttribute('visible', 'false');
+                                                                                                       ground.setAttribute('visible', 'false');
+                                                                                                       swimming.setAttribute('visible', 'false');
+                                                                                                       sg.setAttribute('visible', 'false');
+                                                                                                       ed.setAttribute('visible', 'false');
+                                                                                                       artcollege.setAttribute('visible', 'false');
+                                                                                                       park.setAttribute('visible', 'false');
+                                                                                                       english.setAttribute('visible', 'false');
+                                                                                                       science.setAttribute('visible', 'false');
+                                                    swimming.setAttribute('visible', 'true');
+                                                    swimming.setAttribute('position', '400 20 50');
+                                                    swimming.setAttribute('rotation', '0 -70 0');
+                                                    swimming.setAttribute('scale', '0.7 0.7 0.7');
+           
+                                                        });
+                                                        
+ 
+                                                                    
+                                                    document.querySelector('#park').addEventListener('click', function() {
+                                                    sky.setAttribute('src', 'park.jpg');
+                                                    this.setAttribute('visible', 'false');
+
+                                                        hover1.setAttribute('scale', '0 0 0');
+                                                         label1.setAttribute('scale', '0 0 0'); 
+                                                    
+                                                     ad.setAttribute('visible', 'false');
+                                                     light.setAttribute('visible', 'false');
+                                                     artcollege.setAttribute('visible', 'false');
+                                                     red27.setAttribute('visible', 'false');
+                                                     v.setAttribute('visible', 'false');
+                                                     ground.setAttribute('visible', 'false');
+                                                     swimming.setAttribute('visible', 'false');
+                                                     sg.setAttribute('visible', 'false');
+                                                     ed.setAttribute('visible', 'false');
+                                                        back.setAttribute('visible', 'false');
+                                                                                                     
+                                                    library.setAttribute('visible', 'true');
+                                                    library.setAttribute('position', '800 70 200');
+                                                    library.setAttribute('rotation', '0 240 0');
+                                                    library.setAttribute('scale', '2.9 2.6 2.6');
+                     
+                                                    business.setAttribute('visible', 'true');
+                                                    business.setAttribute('position', '-700 40 100');
+                                                    business.setAttribute('rotation', '0 90 0');
+                                                    business.setAttribute('scale', '2.2 2.2 2.2');
+                                                
+                                                    technology.setAttribute('visible', 'true');
+                                                    technology.setAttribute('position', '-100 20 -300');
+                                                    technology.setAttribute('rotation', '0 30 0');
+                                                    technology.setAttribute('scale', '0.7 0.7 0.7');
+
+                                                    hover3.setAttribute('scale', '0.045 0.1 0');
+                                                         label3.setAttribute('scale', '2 2 2');
+
+
+                                                                                                     });
+                                                                            
+                                                    document.querySelector('#science').addEventListener('click', function() {
+                                                    sky.setAttribute('src', 'science.jpg');
+                                                    this.setAttribute('visible', 'false');
+                                                                                                        
+                                                      red27.setAttribute('visible', 'false');
+                                                      swimming.setAttribute('visible', 'false');
+
+                                                      v.setAttribute('visible', 'true');
+                                                      v.setAttribute('position', '100 20 200');
+                                                      v.setAttribute('rotation', '0 180 0');
+                                                      v.setAttribute('scale', '0.7 0.7 0.7');
+                                                            });
+                                                            
+                                                
+                                                        
+                                                document.querySelector('#light').addEventListener('click', function() {
+                                                sky.setAttribute('src', 'light.jpg');
+                                                this.setAttribute('visible', 'false');
+                                                                                                  
+                                                    sg.setAttribute('visible', 'false');
+                                                    park.setAttribute('visible', 'false');
+                                                    science.setAttribute('visible', 'false');
+                                                    swimming.setAttribute('visible', 'false');
+                                                    ad.setAttribute('visible', 'false');
+                                                                                                  light.setAttribute('visible', 'false');
+                                                                                                  artcollege.setAttribute('visible', 'false');
+                                                                                                  red27.setAttribute('visible', 'false');
+                                                                                                  ground.setAttribute('visible', 'false');
+                                                                                                  swimming.setAttribute('visible', 'false');
+                                                                                                  sg.setAttribute('visible', 'false');
+                                                                                                  ed.setAttribute('visible', 'false');
+                                                                                                  artcollege.setAttribute('visible', 'false');
+                                                                                                  park.setAttribute('visible', 'false');
+                                                                                                  english.setAttribute('visible', 'false');
+                                                                                                  
+                                                library.setAttribute('visible', 'true');
+                                                library.setAttribute('position', '-100 20 -200');
+                                                library.setAttribute('rotation', '0 20 0');
+                                                library.setAttribute('scale', '0.5 0.5 0.5');
+
+                                                v.setAttribute('visible', 'true');
+                                                v.setAttribute('position', '-650 20 -100');
+                                                v.setAttribute('rotation', '0 -280 0');
+                                                v.setAttribute('scale', '1.6 1.6 1.6');
+
+                                                hover2.setAttribute('scale', '0 0 0');
+                                                         label2.setAttribute('scale', '0 0 0');
+                                                                                                  });
+                                                                
+                                                document.querySelector('#ad').addEventListener('click', function() {
+                                                  sky.setAttribute('src', 'ad.jpg');
+                                                  this.setAttribute('visible', 'false');
+                                                  
+                                                  park.setAttribute('visible', 'false');
+                                                  light.setAttribute('visible', 'false');
+                                                  sg.setAttribute('visible', 'false');
+                                                  ground.setAttribute('visible', 'false');
+                                                  ad.setAttribute('visible', 'false');
+
+                                                    v.setAttribute('visible', 'true');
+                                                    v.setAttribute('position', '110 20 -300');
+                                                    v.setAttribute('rotation', '0 0 0');
+                                                    v.setAttribute('scale', '0.7 0.7 0.7');
+                                                
+                                                    swimming.setAttribute('visible', 'true');
+                                                    swimming.setAttribute('position', '-70 10 300');
+                                                    swimming.setAttribute('rotation', '0 140 0');
+                                                    swimming.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                           
+                                                                                           science.setAttribute('visible', 'true');
+                                                                                           science.setAttribute('position', '-130 0 300');
+                                                                                           science.setAttribute('rotation', '0 180 0');
+                                                                                           science.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                              
+
+                                                  });
+                                                  
+                                                  document.querySelector('#swimming').addEventListener('click', function() {
+                                                  sky.setAttribute('src', 'swimming.jpg');
+                                                  this.setAttribute('visible', 'false');
+                                                                                                       
+                                                  park.setAttribute('visible', 'false');
+                                                  light.setAttribute('visible', 'false');
+                                                  sg.setAttribute('visible', 'false');
+                                                  science.setAttribute('visible', 'false');
+                                                  english.setAttribute('visible', 'false');
+
+                                                                                                       
+                                                                                                       
+                                                ground.setAttribute('visible', 'true');
+                                                ground.setAttribute('position', '-300 60 200');
+                                                ground.setAttribute('rotation', '0 150 0');
+                                                ground.setAttribute('scale', '1.2 1.2 1.2');
+                                                                                                       
+                                                v.setAttribute('visible', 'true');
+                                                v.setAttribute('position', '300 20 -300');
+                                                v.setAttribute('rotation', '0 280 0');
+                                                v.setAttribute('scale', '1 1 1');
+                                                                                                       
+                                                });
+                                                
+                                                document.querySelector('#ed').addEventListener('click', function() {
+                                                sky.setAttribute('src', 'ed.jpg');
+                                                this.setAttribute('visible', 'false');
+                                            
+                                                ad.setAttribute('visible', 'false');
+                                                light.setAttribute('visible', 'false');
+                                                artcollege.setAttribute('visible', 'false');
+                                                red27.setAttribute('visible', 'false');
+                                                v.setAttribute('visible', 'false');
+                                                ground.setAttribute('visible', 'false');
+                                                swimming.setAttribute('visible', 'false');
+                                                sg.setAttribute('visible', 'false');
+                                                ed.setAttribute('visible', 'false');
+                                                park.setAttribute('visible', 'false');
+                                                light.setAttribute('visible', 'false');
+                                                sg.setAttribute('visible', 'false');
+                                                library.setAttribute('visible', 'false');
+                                                back.setAttribute('visible', 'false');
+
+                                               technology.setAttribute('visible', 'true');
+                                               technology.setAttribute('position', '-400 20 300');
+                                               technology.setAttribute('rotation', '0 130 0');
+                                               technology.setAttribute('scale', '1.4 1.4 1.4');
+                                                                                               
+                                                                                               english.setAttribute('visible', 'true');
+                                                                                               english.setAttribute('position', '-150 40 300');
+                                                                                               english.setAttribute('rotation', '0 170 0');
+                                                                                               english.setAttribute('scale', '1.3 1.3 1.3');
+                                                                   });
+                                                  
+
+                                                  
+                                                  
+</script>
+  
+  </body>
+</html>
