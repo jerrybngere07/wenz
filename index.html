@@ -10,9 +10,10 @@
   </head>
   <body>
     <a-scene>
-        <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
-             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>             
-           
+        
+        <a-entity camera="fov:90" position="0 1.6 0" no-click-look-controls="maxyaw:3; maxpitch:.8">
+            <a-entity cursor="fuse: true; maxDistance: 500; timeout: 200" position="0 0 -2" geometry="primitive:ring" material="color:white;shader:flat" scale=".03 .03 .03">
+            </a-entity>
         </a-entity>
          <!- ---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------------------------------------>
                     <a-assets>
